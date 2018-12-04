@@ -1,0 +1,22 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background-color: #a2ad93;
+	background-image: url("authors.png");
+	background-position: center;
+	background-size: contain;
+ 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	text-align: center;
+}
+main{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("body.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
