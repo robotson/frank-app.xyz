@@ -5,7 +5,7 @@ html{
 body{
 	background-color: #a2ad93;
 	background-image: url("authors.png");
-	background-position: center;
+	background-position: center top;
 	background-size: contain;
  	background-repeat: no-repeat;
 	background-attachment: fixed;
