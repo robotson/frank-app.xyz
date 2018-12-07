@@ -16,43 +16,53 @@ body{
 	overflow: auto;
 	font-family: 'Helvetica Neue', Helvetica ,Arial, sans-serif;
 }
-header{
-	width: 100vw;
-	height: 100vh;
-	background-image: url("body.png");
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	box-sizing: border-box;
-	font-size: 8vh;
-	padding-top: 2vh;
-	font-weight: bolder;
-}
-header a{
-	text-decoration: none;
-}
-header a:link, header a:visited{
-	color: black;
-}
-header a:hover, header a:active{
-	text-decoration: line-through;
-	color: #353831;
-}
-section{
+main{
 	width: 100vw;
 	height: 100vh;
 	display: inline-grid;
-	grid-template-rows: 25% 50% 25%;
+	grid-template-rows: 12.5% 12.5% 50% 25%;
 	grid-template-columns: auto minmax(auto, 75vh) auto;
 
 }
-section div#targets{
-	grid-row: 2;
+main h1{
+	margin: 0;
+	padding-top: 1vh;
+	grid-row: 1;
+	grid-column: 2;
+	font-size: 7vh;
+}
+
+main div#targets{
+	grid-row: 3;
 	grid-column: 2;
 	display: grid;
 	grid-template-rows: repeat(4, 25%);
 	grid-row-gap: 6px;
 }
+
+section.BLINKY{
+	width: 19vh;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+ 	top: -93%;
+	right: -55%;
+	transform: rotate(15deg);
+	font-weight: bolder;
+	font-size: 2.2vh;
+	animation: blink-animation 0.8s steps(3, start) infinite;
+  /* -webkit-animation: blink-animation 1s steps(5, start) infinite; */
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+/* @-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+} */
 
 #privacy{
 	position: relative;
@@ -107,6 +117,18 @@ section div#targets{
 	#dopa{
 		left: -10%;
 	}
+}
+
+@media only screen and (max-width: 850px) {
+
+	section.BLINKY {
+		transform: rotate(0deg);
+		right: 50px;
+		top: 37.5vh;
+		height: 2.2vh;
+		width: 100%;
+	}
+
 }
 
 
