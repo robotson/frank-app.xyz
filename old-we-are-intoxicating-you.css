@@ -3,11 +3,6 @@ html{
 	overflow: hidden;
 }
 body.desktop{
-	justify-content: unset;
-	align-items: unset;
-	height: unset;
-	max-width: unset;
-	display: block;
 	background-color: #a2ad93;
 	background-image: url("authors.png");
 	background-position: top;
@@ -76,7 +71,12 @@ section.BLINKY{
 	transform: scale(1.5);
 }
 
-
+#contact{
+	position: relative;
+	transform: scale(1.1);
+	left: -1%;
+	top: 10%;
+}
 
 #privacy:hover{
 	transform: scale(1.6);
@@ -94,14 +94,6 @@ section.BLINKY{
 	max-width:30%;
 	max-height: 80%;
 	margin: 0 1px;
-}
-
-#targets div a img#contact{
-	position: relative;
-	transform: scale(1.2);
-	left: -3%;
-	top: 5%;
-  max-width: 15%;
 }
 
 @media only screen and (min-width: 440px) {
@@ -123,7 +115,7 @@ section.BLINKY{
 		right: -5%;
 	}
 	#dopa{
-		left: 5%;
+		left: -10%;
 	}
 }
 

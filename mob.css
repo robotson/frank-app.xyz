@@ -1,0 +1,37 @@
+body{
+	margin: 0 auto;
+	height: 70vh;
+	max-width: 320px;
+	font-family: 'Helvetica Neue', Helvetica ,Arial, sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header h1{
+	margin: 0;
+	font-size: 3em;
+}
+.thumbs, .thumbs li, nav ul, nav li{
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.thumbs li{
+	margin: 5px 0;
+}
+nav li{
+	display: inline;
+	font-weight: bold;
+}
+nav a{
+	text-decoration: none;
+}
+nav a:link, nav a:visited{
+	color: black;
+}
+nav a:hover, nav a:active{
+	text-decoration: line-through;
+	color: #353831;
+}
