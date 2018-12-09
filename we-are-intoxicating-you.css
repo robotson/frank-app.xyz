@@ -56,18 +56,12 @@ section.BLINKY{
 	font-weight: bolder;
 	font-size: 2.2vh;
 	animation: blink-animation 0.8s steps(3, start) infinite;
-  /* -webkit-animation: blink-animation 1s steps(5, start) infinite; */
 }
 @keyframes blink-animation {
   to {
     visibility: hidden;
   }
 }
-/* @-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-} */
 
 #privacy{
 	position: relative;
@@ -81,10 +75,6 @@ section.BLINKY{
 #privacy:hover{
 	transform: scale(1.6);
 }
-#contact:hover{
-	transform: scale(1.2);
-}
-
 
 .mini:hover{
 	transform: scale(1.03);
@@ -103,6 +93,10 @@ section.BLINKY{
 	top: 5%;
   max-width: 15%;
 }
+#targets div a img#contact:hover{
+	transform: scale(1.3);
+}
+
 
 @media only screen and (min-width: 440px) {
 
@@ -198,7 +192,6 @@ section.BLINKY{
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -206,7 +199,6 @@ section.BLINKY{
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
