@@ -12,6 +12,22 @@ header h1{
 	margin: 0;
 	font-size: 3em;
 }
+h2{
+	margin: .5em 0;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+h2 a{
+	text-decoration: none;
+	font-weight: bold;
+}
+h2 a:link, h2 a:visited{
+	color: #353831;
+}
+h2 a:hover, h2 a:active{
+	text-decoration: underline;
+	color: black;
+}
 .thumbs, .thumbs li, nav ul, nav li{
 	text-decoration: none;
 	list-style-type: none;
